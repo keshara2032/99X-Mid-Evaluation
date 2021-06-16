@@ -35,8 +35,6 @@ def validateString(input):
     open_brackets = ['(','{','[']
     close_brackets = [')','}',']']
 
-    # Flag to indicate whether formula contains any brackets
-    isValid = False
     
     # Iterating over each character in the input string
     for char in input:
@@ -52,8 +50,8 @@ def validateString(input):
             else:
                 return False
     
-    # Returns True if its a WFF and contained brackets
-    return brackets.isEmpty() and isValid
+    # Returns True if its a WFF 
+    return brackets.isEmpty() 
         
 
 
