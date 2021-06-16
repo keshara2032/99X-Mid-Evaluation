@@ -34,3 +34,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+        cd Ex_01/
+        python3 test_ex_01.py
+        
